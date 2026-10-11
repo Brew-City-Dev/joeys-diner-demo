@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joey's Diner | Retro 1950s Diner in Downtown Waukesha, WI</title>
+<meta name="description" content="A retro 1950s diner experience in the heart of Waukesha. Breakfast, burgers, cheese curds, and classic American comfort food. 290 E Main St. Call (262) 232-8221.">
+<link rel="canonical" href="https://joeysdinerwaukesha.com/">
+<!-- Demo only: keep this concept out of search results. Remove on the live site. -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Joey's Diner | Retro 1950s Diner in Downtown Waukesha, WI">
+<meta property="og:description" content="Hearty portions, fresh ingredients, and a jukebox right in the heart of downtown Waukesha. Breakfast, burgers, cheese curds, and more.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Joey's Diner",
+  "telephone": "+1-262-232-8221",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "290 E Main St",
+    "addressLocality": "Waukesha",
+    "addressRegion": "WI",
+    "postalCode": "53186",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "15:00" }
+  ],
+  "servesCuisine": "American",
+  "priceRange": "$",
+  "areaServed": "Waukesha, WI"
+}
+</script>
+</head>
+<body>
+
+<!-- Demo ribbon: remove this block on the live site -->
+<div class="ribbon" id="ribbon">
+  <span><strong>Concept redesign</strong> &mdash; built by Brew City Devs to show what a modern Joey's Diner site could look like. Not the live site.</span>
+  <button class="ribbon__x" aria-label="Dismiss notice" id="ribbonX">&times;</button>
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="header">
+  <div class="wrap site-header__in">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 36 36" width="36" height="36" fill="none">
+          <circle cx="18" cy="18" r="15" stroke="currentColor" stroke-width="2.5"/>
+          <circle cx="18" cy="18" r="7" fill="currentColor" opacity="0.2"/>
+          <circle cx="18" cy="18" r="3" fill="currentColor"/>
+          <path d="M18 3 L18 7 M18 29 L18 33 M3 18 L7 18 M29 18 L33 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand__txt">
+        <strong>Joey's Diner</strong>
+        <small>Downtown Waukesha, WI</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#specialties">Specialties</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <div class="site-header__cta">
+      <a class="tel" href="tel:+12622328221">(262) 232-8221</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ─────── HERO ─────── -->
+  <section class="hero" id="top">
+    <div class="hero__art" aria-hidden="true">
+      <div class="hero__checker"></div>
+      <div class="hero__glow"></div>
+    </div>
+    <div class="wrap hero__in">
+      <p class="eyebrow">A Retro 1950s Diner &middot; Downtown Waukesha</p>
+      <h1>Good food. Good vibes.<br><em>Just like you remember.</em></h1>
+      <p class="lede">
+        Breakfast scramblers, juicy burgers, cheese curds, and a jukebox &mdash;
+        right in the heart of Main Street. Hearty portions, fresh ingredients,
+        and a friendly face every time.
+      </p>
+      <div class="hero__btns">
+        <a class="btn btn--lg" href="#menu">See the menu</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+12622328221">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a12 12 0 006 6L15 13l5 2v3a2 2 0 01-2.2 2A16.5 16.5 0 013 5.2 2 2 0 015 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          (262) 232-8221
+        </a>
+      </div>
+      <ul class="hero__chips">
+        <li>Breakfast &bull; Lunch &bull; Dinner</li>
+        <li>290 E Main St, Waukesha</li>
+        <li>Dine-in &amp; carryout</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────── TRUST BAR ─────── -->
+  <section class="trust" aria-label="Quick facts">
+    <div class="wrap trust__in">
+      <div class="trust__item"><b>1950s</b><span>Retro experience</span></div>
+      <div class="trust__item"><b>Main St</b><span>Downtown Waukesha</span></div>
+      <div class="trust__item"><b>Hearty</b><span>Portions</span></div>
+      <div class="trust__item"><b>Fresh</b><span>Ingredients</span></div>
+      <div class="trust__item"><b>Classic</b><span>American comfort food</span></div>
+    </div>
+  </section>
+
+  <!-- ─────── MENU ─────── -->
+  <section class="section" id="menu">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">What we serve</p>
+        <h2>The menu</h2>
+        <p class="sec-head__sub">Classic American comfort food done right. Ask your server about today's specials &mdash; the full menu is waiting inside.</p>
+      </header>
+
+      <div class="tabs" role="tablist" aria-label="Menu categories">
+        <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab-breakfast" id="btn-breakfast">Breakfast</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-burgers" id="btn-burgers">Burgers</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-appetizers" id="btn-appetizers">Appetizers</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-sandwiches" id="btn-sandwiches">Sandwiches &amp; Baskets</button>
+      </div>
+
+      <div class="tab-panels">
+
+        <div class="tab-panel is-active" id="tab-breakfast" role="tabpanel" aria-labelledby="btn-breakfast">
+          <div class="grid menu-grid">
+            <div class="menu-card menu-card--highlight">
+              <div class="menu-card__badge">Fan Favorite</div>
+              <div class="menu-card__icon" aria-hidden="true">&#x1F373;</div>
+              <h3>Breakfast Scramblers</h3>
+              <p>Fluffy eggs scrambled your way. Served with toast and home fries.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F95E;</div>
+              <h3>Pancakes</h3>
+              <p>Thick golden pancakes with butter and syrup. A diner staple.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F969;</div>
+              <h3>Bacon &amp; Eggs</h3>
+              <p>Crispy bacon, two eggs any style, toast, and home fries.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F9C7;</div>
+              <h3>French Toast</h3>
+              <p>Thick-cut, dusted in powdered sugar. Served with syrup.</p>
+            </div>
+          </div>
+          <p class="menu-note">&#9733; Real category and item names from joeysdinerwaukesha.com. Descriptions are concept placeholder copy &mdash; a live build uses Joey's actual menu with real descriptions and prices.</p>
+        </div>
+
+        <div class="tab-panel" id="tab-burgers" role="tabpanel" aria-labelledby="btn-burgers">
+          <div class="grid menu-grid">
+            <div class="menu-card menu-card--highlight">
+              <div class="menu-card__badge">Fan Favorite</div>
+              <div class="menu-card__icon" aria-hidden="true">&#x1F354;</div>
+              <h3>Bacon Cheeseburger</h3>
+              <p>Juicy beef patty, crispy bacon, melted cheese, and all the fixings.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F9C7;</div>
+              <h3>Patty Melt</h3>
+              <p>Ground beef on grilled rye with caramelized onions and melted Swiss.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F354;</div>
+              <h3>Classic Burger</h3>
+              <p>Fresh beef, lettuce, tomato, onion, pickle. Simple and perfect.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F354;</div>
+              <h3>Double Burger</h3>
+              <p>Two patties, double cheese, special sauce. For the seriously hungry.</p>
+            </div>
+          </div>
+          <p class="menu-note">&#9733; Real item names from joeysdinerwaukesha.com. Other items are representative placeholder copy for the concept.</p>
+        </div>
+
+        <div class="tab-panel" id="tab-appetizers" role="tabpanel" aria-labelledby="btn-appetizers">
+          <div class="grid menu-grid">
+            <div class="menu-card menu-card--highlight">
+              <div class="menu-card__badge">Wisconsin Classic</div>
+              <div class="menu-card__icon" aria-hidden="true">&#x1F9C0;</div>
+              <h3>Cheese Curds</h3>
+              <p>Lightly battered Wisconsin cheese curds, fried golden. Served with dipping sauce.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F9C5;</div>
+              <h3>Onion Rings</h3>
+              <p>Thick-cut onion rings in a crispy batter. A perfect side for anything.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F35F;</div>
+              <h3>Crispy Fries</h3>
+              <p>Golden, crispy, perfectly salted. The side that goes with everything.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F357;</div>
+              <h3>Wings</h3>
+              <p>Crispy chicken wings. Ask your server about today's sauces.</p>
+            </div>
+          </div>
+          <p class="menu-note">&#9733; All item names sourced from joeysdinerwaukesha.com. Descriptions are concept placeholder copy.</p>
+        </div>
+
+        <div class="tab-panel" id="tab-sandwiches" role="tabpanel" aria-labelledby="btn-sandwiches">
+          <div class="grid menu-grid">
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F357;</div>
+              <h3>Chicken Sandwich</h3>
+              <p>Crispy or grilled chicken breast on a toasted bun with your choice of toppings.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F96A;</div>
+              <h3>BLT Basket</h3>
+              <p>Classic BLT on toasted bread, served with fries and a pickle.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F96A;</div>
+              <h3>Club Sandwich</h3>
+              <p>Triple-decker with turkey, ham, bacon, lettuce, tomato, and mayo.</p>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__icon" aria-hidden="true">&#x1F969;</div>
+              <h3>Steak Basket</h3>
+              <p>Char-grilled steak with your choice of sides. A hearty Main Street classic.</p>
+            </div>
+          </div>
+          <p class="menu-note">&#9733; Real category name from joeysdinerwaukesha.com. Chicken sandwich is a real item; others are representative placeholder copy.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── SPECIALTIES ─────── -->
+  <section class="section section--alt" id="specialties">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Don't leave without trying</p>
+        <h2>Diner favorites</h2>
+        <p class="sec-head__sub">These are the ones regulars keep coming back for.</p>
+      </header>
+
+      <div class="grid specials-grid">
+        <article class="special-card">
+          <div class="special-card__art" aria-hidden="true">&#x1F37A;</div>
+          <h3>Root Beer Float</h3>
+          <p>Cold, creamy, and retro as it gets. Real ice cream, real root beer, in a tall frosty glass.</p>
+        </article>
+        <article class="special-card">
+          <div class="special-card__art" aria-hidden="true">&#x1F370;</div>
+          <h3>Chocolate Cake</h3>
+          <p>Thick, rich, house-made chocolate cake. The kind that brings back memories.</p>
+        </article>
+        <article class="special-card">
+          <div class="special-card__art" aria-hidden="true">&#x1F9C0;</div>
+          <h3>Wisconsin Cheese Curds</h3>
+          <p>You're in Wisconsin. Get the curds. Golden, gooey, and totally worth it.</p>
+        </article>
+        <article class="special-card">
+          <div class="special-card__art" aria-hidden="true">&#x1F354;</div>
+          <h3>Bacon Cheeseburger</h3>
+          <p>The one everyone orders. Juicy, cheesy, stacked. The real deal.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── THE EXPERIENCE ─────── -->
+  <section class="section split" id="about">
+    <div class="wrap split__in">
+      <div class="split__text">
+        <p class="eyebrow">Step inside</p>
+        <h2>A jukebox, a booth, and food that feels like home</h2>
+        <p>Joey's Diner brings the whole 1950s experience to downtown Waukesha. Slip into a booth, flip through the jukebox, and let us bring you something hearty. Everything is made with fresh ingredients and real portions &mdash; none of that tiny-plate stuff.</p>
+        <ul class="ticks">
+          <li>Retro 1950s atmosphere</li>
+          <li>Booth and counter seating</li>
+          <li>Jukebox with classic hits</li>
+          <li>Breakfast, lunch &amp; dinner daily</li>
+          <li>Carryout available</li>
+        </ul>
+        <a class="btn" href="tel:+12622328221">Call to order</a>
+      </div>
+      <aside class="info-card">
+        <h3>Find us on Main Street</h3>
+        <address class="info-card__addr" style="font-style:normal">
+          290 E Main St<br>
+          Waukesha, WI 53186
+        </address>
+        <p class="info-card__phone"><a href="tel:+12622328221">(262) 232-8221</a></p>
+        <a class="info-card__map" href="https://maps.google.com/?q=290+E+Main+St,+Waukesha,+WI+53186" target="_blank" rel="noopener">
+          Get directions &rarr;
+        </a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ─────── HOURS ─────── -->
+  <section class="section section--alt hours-section" id="hours">
+    <div class="wrap hours-wrap">
+      <div>
+        <header class="sec-head sec-head--left">
+          <p class="eyebrow">We're open</p>
+          <h2>Hours</h2>
+        </header>
+        <table class="hours-table">
+          <tr><th scope="row">Monday</th><td>7:00 am &ndash; 9:00 pm</td></tr>
+          <tr><th scope="row">Tuesday</th><td>7:00 am &ndash; 9:00 pm</td></tr>
+          <tr><th scope="row">Wednesday</th><td>7:00 am &ndash; 9:00 pm</td></tr>
+          <tr><th scope="row">Thursday</th><td>7:00 am &ndash; 9:00 pm</td></tr>
+          <tr><th scope="row">Friday</th><td>7:00 am &ndash; 9:00 pm</td></tr>
+          <tr><th scope="row">Saturday</th><td>7:00 am &ndash; 9:00 pm</td></tr>
+          <tr><th scope="row">Sunday</th><td>8:00 am &ndash; 3:00 pm</td></tr>
+        </table>
+      </div>
+      <div class="hours-cta">
+        <p class="eyebrow">Ready to visit?</p>
+        <h2>Come hungry, leave happy</h2>
+        <p>We're right in the heart of downtown Waukesha on Main Street. Walk-ins always welcome.</p>
+        <div class="hours-cta__btns">
+          <a class="btn btn--lg" href="https://maps.google.com/?q=290+E+Main+St,+Waukesha,+WI+53186" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn--ghost btn--lg" href="tel:+12622328221">(262) 232-8221</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── TESTIMONIALS (placeholder) ─────── -->
+  <section class="section quotes" aria-label="Customer reviews">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">From the regulars</p>
+        <h2>What people are saying</h2>
+        <p class="sec-head__sub demo-note">Demo placeholder &mdash; on the live site these would be real Google reviews.</p>
+      </header>
+      <div class="grid quotes__grid">
+        <blockquote>
+          <p>&ldquo;Best cheese curds in Waukesha, hands down. The place has so much character &mdash; feels like you&rsquo;re eating in 1955.&rdquo;</p>
+          <cite>Sample review &middot; Waukesha</cite>
+        </blockquote>
+        <blockquote>
+          <p>&ldquo;The bacon cheeseburger is unreal. Big portions, fair prices, and the staff treat you like a regular from day one.&rdquo;</p>
+          <cite>Sample review &middot; Waukesha</cite>
+        </blockquote>
+        <blockquote>
+          <p>&ldquo;Perfect Saturday breakfast spot. The scramblers are huge. Love the jukebox and the whole retro vibe on Main Street.&rdquo;</p>
+          <cite>Sample review &middot; Pewaukee</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── VISIT ─────── -->
+  <section class="section section--alt" id="visit">
+    <div class="wrap visit">
+      <div class="visit__col">
+        <h2>Joey's Diner</h2>
+        <address class="visit__addr" style="font-style:normal">
+          290 E Main St<br>
+          Waukesha, WI 53186
+        </address>
+        <dl class="visit__dl">
+          <dt>Phone</dt><dd><a href="tel:+12622328221">(262) 232-8221</a></dd>
+        </dl>
+        <a class="btn btn--ghost" href="https://maps.google.com/?q=290+E+Main+St,+Waukesha,+WI+53186" target="_blank" rel="noopener">Open in Maps</a>
+      </div>
+      <div class="visit__col">
+        <h2>Hours</h2>
+        <table class="hours-table">
+          <tr><th scope="row">Mon &ndash; Sat</th><td>7:00 am &ndash; 9:00 pm</td></tr>
+          <tr><th scope="row">Sunday</th><td>8:00 am &ndash; 3:00 pm</td></tr>
+        </table>
+        <p class="visit__note">Walk-ins welcome &middot; Carryout available</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__in">
+    <div>
+      <strong>Joey's Diner</strong>
+      <p>A Retro 1950s Diner Experience<br>290 E Main St, Waukesha, WI 53186</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#menu">Menu</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+      <a href="tel:+12622328221">(262) 232-8221</a>
+    </nav>
+  </div>
+  <div class="wrap site-footer__fine">
+    <span>&copy; <span id="yr">2026</span> Joey's Diner</span>
+    <span>Concept redesign by <a href="#top">Brew City Devs</a></span>
+  </div>
+</footer>
+
+<!-- Mobile sticky action bar -->
+<div class="dock">
+  <a href="tel:+12622328221">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a12 12 0 006 6L15 13l5 2v3a2 2 0 01-2.2 2A16.5 16.5 0 013 5.2 2 2 0 015 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    Call
+  </a>
+  <a href="https://maps.google.com/?q=290+E+Main+St,+Waukesha,+WI+53186" target="_blank" rel="noopener" class="dock__primary">Get Directions</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
