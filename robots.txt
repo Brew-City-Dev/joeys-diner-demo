@@ -1,4 +1,2 @@
-# Design concept, not the live Joey's Diner site.
-# Kept out of search results on purpose.
 User-agent: *
 Disallow: /
