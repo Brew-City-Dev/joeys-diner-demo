@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -88,6 +89,8 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero__art" aria-hidden="true">
+      <img class="hero__bg-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&auto=format&fit=crop&q=75" alt="" loading="eager">
+      <div class="hero__overlay"></div>
       <div class="hero__checker"></div>
       <div class="hero__glow"></div>
     </div>
@@ -124,6 +127,22 @@
       <div class="trust__item"><b>Classic</b><span>American comfort food</span></div>
     </div>
   </section>
+
+  <!-- PHOTO STRIP -->
+  <div class="photo-strip" aria-hidden="true">
+    <div class="photo-strip__item">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=300&auto=format&fit=crop&q=80" alt="" loading="lazy">
+    </div>
+    <div class="photo-strip__item">
+      <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&h=300&auto=format&fit=crop&q=80" alt="" loading="lazy">
+    </div>
+    <div class="photo-strip__item">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&h=300&auto=format&fit=crop&q=80" alt="" loading="lazy">
+    </div>
+    <div class="photo-strip__item">
+      <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=500&h=300&auto=format&fit=crop&q=80" alt="" loading="lazy">
+    </div>
+  </div>
 
   <!-- MENU -->
   <section class="section" id="menu">
@@ -265,22 +284,30 @@
 
       <div class="grid specials-grid">
         <article class="special-card">
-          <div class="special-card__art" aria-hidden="true">&#x1F37A;</div>
+          <div class="special-card__art">
+            <img src="https://images.unsplash.com/photo-1572490122747-3e9ea9a6c7b1?w=400&h=260&auto=format&fit=crop&q=80" alt="Root beer float" loading="lazy">
+          </div>
           <h3>Root Beer Float</h3>
           <p>Cold, creamy, and retro as it gets. Real ice cream, real root beer, in a tall frosty glass.</p>
         </article>
         <article class="special-card">
-          <div class="special-card__art" aria-hidden="true">&#x1F370;</div>
+          <div class="special-card__art">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=260&auto=format&fit=crop&q=80" alt="Chocolate cake" loading="lazy">
+          </div>
           <h3>Chocolate Cake</h3>
           <p>Thick, rich, house-made chocolate cake. The kind that brings back memories.</p>
         </article>
         <article class="special-card">
-          <div class="special-card__art" aria-hidden="true">&#x1F9C0;</div>
+          <div class="special-card__art">
+            <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=400&h=260&auto=format&fit=crop&q=80" alt="Wisconsin cheese curds" loading="lazy">
+          </div>
           <h3>Wisconsin Cheese Curds</h3>
           <p>You're in Wisconsin. Get the curds. Golden, gooey, and totally worth it.</p>
         </article>
         <article class="special-card">
-          <div class="special-card__art" aria-hidden="true">&#x1F354;</div>
+          <div class="special-card__art">
+            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=260&auto=format&fit=crop&q=80" alt="Bacon cheeseburger" loading="lazy">
+          </div>
           <h3>Bacon Cheeseburger</h3>
           <p>The one everyone orders. Juicy, cheesy, stacked. The real deal.</p>
         </article>
@@ -415,7 +442,7 @@
   </div>
   <div class="wrap site-footer__fine">
     <span>&copy; <span id="yr">2026</span> Joey's Diner</span>
-    <span>Concept redesign by <a href="#top">Brew City Devs</a></span>
+    <span>Concept redesign by <a href="#top">Brew City Devs</a> &middot; Photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span>
   </div>
 </footer>
 

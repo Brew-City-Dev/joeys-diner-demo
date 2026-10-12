@@ -113,10 +113,12 @@ a:hover { color: var(--red-dark); }
   .nav a { font-size: 1.125rem; padding: .75rem 1rem; border-radius: 8px; }
 }
 
-.hero { position: relative; overflow: hidden; padding: 4.5rem 0 3.5rem; background: #1A1A1A; color: #fff; }
+.hero { position: relative; overflow: hidden; padding: 5rem 0 4rem; background: #1A1A1A; color: #fff; }
 .hero__art { position: absolute; inset: 0; z-index: 0; }
-.hero__checker { position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(200,16,46,.18) 0px, rgba(200,16,46,.18) 18px, transparent 18px, transparent 36px), repeating-linear-gradient(-45deg, rgba(200,16,46,.09) 0px, rgba(200,16,46,.09) 18px, transparent 18px, transparent 36px); }
-.hero__glow { position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%); width: 700px; height: 350px; border-radius: 50%; background: radial-gradient(ellipse, rgba(200,16,46,.35) 0%, transparent 70%); }
+.hero__bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero__overlay { position: absolute; inset: 0; background: rgba(12, 4, 4, 0.70); }
+.hero__checker { position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(200,16,46,.13) 0px, rgba(200,16,46,.13) 18px, transparent 18px, transparent 36px), repeating-linear-gradient(-45deg, rgba(200,16,46,.07) 0px, rgba(200,16,46,.07) 18px, transparent 18px, transparent 36px); }
+.hero__glow { position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%); width: 700px; height: 350px; border-radius: 50%; background: radial-gradient(ellipse, rgba(200,16,46,.30) 0%, transparent 70%); }
 .hero__in { position: relative; z-index: 1; }
 .hero .eyebrow { color: #FFAAB8; }
 .hero h1 { font-family: var(--font-display); font-size: clamp(2.25rem, 6vw, 3.75rem); font-weight: 700; line-height: 1.1; margin-bottom: 1.25rem; letter-spacing: -.02em; }
@@ -133,6 +135,13 @@ a:hover { color: var(--red-dark); }
 .trust__item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: .125rem; }
 .trust__item b { font-size: 1.0625rem; font-weight: 700; }
 .trust__item span { font-size: .75rem; opacity: .85; white-space: nowrap; }
+
+/* Photo strip */
+.photo-strip { display: grid; grid-template-columns: repeat(4, 1fr); height: 200px; overflow: hidden; }
+.photo-strip__item { overflow: hidden; }
+.photo-strip__item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; display: block; }
+.photo-strip__item:hover img { transform: scale(1.07); }
+@media (max-width: 600px) { .photo-strip { grid-template-columns: repeat(2, 1fr); height: 160px; } }
 
 .section { padding: 4.5rem 0; }
 .section--alt { background: var(--cream-dark); }
@@ -160,11 +169,13 @@ a:hover { color: var(--red-dark); }
 .menu-note { margin-top: 1.5rem; font-size: .8125rem; color: var(--teal); font-style: italic; text-align: center; }
 
 .specials-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
-.special-card { background: #fff; border-radius: var(--r); border: 1px solid var(--border); padding: 2rem 1.5rem; text-align: center; transition: box-shadow .15s, transform .15s; }
+.special-card { background: #fff; border-radius: var(--r); border: 1px solid var(--border); padding: 0; overflow: hidden; text-align: center; transition: box-shadow .15s, transform .15s; }
 .special-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
-.special-card__art { font-size: 2.75rem; margin-bottom: 1rem; }
-.special-card h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: .5rem; color: var(--black); }
-.special-card p { font-size: .9375rem; color: var(--gray); }
+.special-card__art { height: 180px; overflow: hidden; font-size: 0; }
+.special-card__art img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; display: block; }
+.special-card:hover .special-card__art img { transform: scale(1.06); }
+.special-card h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin: 1rem 1.25rem .375rem; color: var(--black); }
+.special-card p { font-size: .9375rem; color: var(--gray); padding: 0 1.25rem 1.5rem; }
 
 .split__in { display: grid; gap: 3rem; align-items: center; }
 @media (min-width: 800px) { .split__in { grid-template-columns: 1fr 1fr; } }
